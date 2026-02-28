@@ -1,0 +1,11 @@
+{
+  "appId": "com.retailconnect.gh",
+  "appName": "RetailConnect",
+  "webDir": ".",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Manage Products</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="theme-color" content="#2F6F4E">
+</head>
+<body class="app">
+
+<div class="container">
+
+<h2>Admin Panel</h2>
+
+<div class="admin-form">
+  <input type="hidden" id="productId">
+  
+  <input type="text" id="name" placeholder="Product Name">
+  <input type="number" id="price" placeholder="Price (GH₵)">
+  <!-- Image file upload (Cloudinary) -->
+  <input type="file" id="imageFile" accept="image/*">
+  <input type="hidden" id="imageUrl">
+  <img id="preview" width="100" style="margin-top:10px;border-radius:10px;display:block;">
+  <input type="number" id="stock" placeholder="Stock Quantity">
+  
+  <select id="category">
+    <option value="electronics">Electronics</option>
+    <option value="fashion">Fashion</option>
+    <option value="groceries">Groceries</option>
+  </select>
+
+  <button class="btn" onclick="saveProduct()">Save Product</button>
+</div>
+
+<h3>Current Products</h3>
+<div id="adminProducts"></div>
+
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

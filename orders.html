@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2F6F4E">
+  <title>Orders - RetailConnect</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="js/pwa.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <h1>My Orders</h1>
+  <span class="tag">Order history</span>
+</header>
+
+<main class="orders-main">
+  <section id="orders-list" class="orders-list"></section>
+  
+  <section id="no-orders" class="empty-state">
+    <p>No orders yet</p>
+    <a href="index.html" class="btn-primary">Start Shopping</a>
+  </section>
+</main>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="nav-icon">🏠</span> Home</a>
+  <a href="index.html#products"><span class="nav-icon">🔍</span> Browse</a>
+  <a href="cart.html"><span class="nav-icon">🛒</span> Cart</a>
+  <a href="orders.html" class="active"><span class="nav-icon">📦</span> Orders</a>
+  <a href="account.html"><span class="nav-icon">👤</span> Account</a>
+</nav>
+
+<script src="js/orders.js"></script>
+</body>
+</html>

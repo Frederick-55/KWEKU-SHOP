@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2F6F4E">
+  <title>Account - RetailConnect</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="js/pwa.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <h1>My Account</h1>
+  <span class="tag">Profile & settings</span>
+</header>
+
+<main class="account-main">
+  <section class="account-section">
+    <div class="account-avatar">👤</div>
+    <h2 id="accountName">Guest User</h2>
+    <p id="accountEmail">Sign in to sync your data</p>
+  </section>
+
+  <section class="account-menu">
+    <a href="orders.html" class="menu-item">📦 My Orders</a>
+    <a href="cart.html" class="menu-item">🛒 Cart</a>
+    <a href="#" class="menu-item">📍 Saved Addresses</a>
+    <a href="#" class="menu-item">⚙️ Settings</a>
+  </section>
+
+  <section class="account-section">
+    <a href="admin.html" class="admin-link">Admin Panel →</a>
+  </section>
+</main>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="nav-icon">🏠</span> Home</a>
+  <a href="index.html#products"><span class="nav-icon">🔍</span> Browse</a>
+  <a href="cart.html"><span class="nav-icon">🛒</span> Cart</a>
+  <a href="orders.html"><span class="nav-icon">📦</span> Orders</a>
+  <a href="account.html" class="active"><span class="nav-icon">👤</span> Account</a>
+</nav>
+
+<script src="js/account.js"></script>
+</body>
+</html>

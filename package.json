@@ -1,0 +1,20 @@
+{
+  "name": "retailconnect",
+  "version": "1.0.0",
+  "description": "RetailConnect - African Mobile Shopping App",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "cap:sync": "npx cap sync",
+    "cap:android": "npx cap open android",
+    "cap:ios": "npx cap open ios"
+  },
+  "capacitor": {
+    "appId": "com.retailconnect.gh",
+    "appName": "RetailConnect",
+    "webDir": "."
+  },
+  "keywords": ["retail", "shopping", "ghana", "africa"],
+  "author": "",
+  "license": "MIT"
+}

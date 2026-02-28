@@ -1,0 +1,25 @@
+{
+  "name": "RetailConnect",
+  "short_name": "RetailConnect",
+  "description": "Shop local, shop smart Ghana - African Mobile Shopping App",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#2F6F4E",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/2e7d32/ffffff?text=RC",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/2e7d32/ffffff?text=RC",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "lifestyle"]
+}

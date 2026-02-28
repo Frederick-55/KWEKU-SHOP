@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2F6F4E">
+  <title>Checkout - RetailConnect</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="js/pwa.js"></script>
+</head>
+<body class="app">
+
+<div class="container checkout-page">
+  <h2>Checkout</h2>
+
+  <section class="checkout-section">
+    <input type="text" id="customerName" placeholder="Full name">
+    <input type="tel" id="customerPhone" placeholder="Phone number (e.g. 024XXXXXXX)">
+    <textarea id="customerAddress" placeholder="Delivery address" rows="3"></textarea>
+  </section>
+
+  <section class="checkout-section">
+    <h3>Payment Method</h3>
+    <div class="payment-options">
+      <div class="payment-option active" data-method="mtn" onclick="selectPayment('mtn')">📱 MTN Mobile Money</div>
+      <div class="payment-option" data-method="telecel" onclick="selectPayment('telecel')">💳 Telecel Cash</div>
+      <div class="payment-option" data-method="card" onclick="selectPayment('card')">🏦 Debit/Credit Card</div>
+      <div class="payment-option" data-method="hubtel" onclick="selectPayment('hubtel')">🔗 Hubtel</div>
+    </div>
+  </section>
+
+  <section class="checkout-section">
+    <h3>Order Summary</h3>
+    <div id="checkout-items"></div>
+    <div class="summary-row total-row">
+      <span>Total</span>
+      <span id="checkout-total">GH₵ 0.00</span>
+    </div>
+    <button class="btn pay-btn" onclick="placeOrder()">Pay Now</button>
+  </section>
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="nav-icon">🏠</span> Home</a>
+  <a href="index.html#products"><span class="nav-icon">🔍</span> Browse</a>
+  <a href="cart.html" class="active"><span class="nav-icon">🛒</span> Cart</a>
+  <a href="orders.html"><span class="nav-icon">📦</span> Orders</a>
+  <a href="account.html"><span class="nav-icon">👤</span> Account</a>
+</nav>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
